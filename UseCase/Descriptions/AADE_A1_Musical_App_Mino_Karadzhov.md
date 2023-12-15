@@ -1,87 +1,9 @@
-# Use-case Descriptions and Diagrams
-
-## About the technique:
-Use cases are a technique for capturing the functional requirements of a system. The idea is to provide a narrative of how a system is being used by describing the typical interactions between the users of a system and a system itself.
-Use cases are essential in understanding user requirements and ensuring the developed system meets these needs. They are also a cornerstone in user-centric design and agile methodologies.
-
-## Few words on the Artefacts in this directory
-The following artefacts are results of analysis on several pre-defined business cases. Their goal is to provide an understanding of what the system is expected to do, when a given scenario with expected results takes place.
-
-## Business cases
-
-### ATM(Automated teller machine)
-Before a user can select a transaction, they have to insert their bank card and enter the correct pin-code. The ATM offers three transactions: withdraw money, check balance, change pin code. Checking the balance is only possible when the bank associated with the card is the same as the bank associated with the ATM. A bank card is always associated with one current account. When checking a balance, customers can also see their most recent withdrawals.
-
-#### Use case Diagram
-[UseCaseDiagram](/Diagram/atmUseCaseD.svg)
-
-#### Use case Descriptions
-
-* Insert card and enter PIN code.
-* Withdraw Money.
-* Check Balance.
-* Change PIN Code.
+# Analysis & Design: Assignment 1 
+## Music Streaming App
+### Solution by Mino Karadzhov
 
 
-<hr>
-
-
-Name | Insert Card and Enter PIN code
-----|----
-**Actor**|Cardholder
-**Description**|Cardholder inserts their card and enters their pincode, in order to use the ATM services.
-**Precondition**|Actor has a pre-existing Bank account and a Bank card, associated with it.
-**Scenario**| Step 1. Actor inserts their Bank card into the ATM <br> Step 2. System requests Actor to enter their PIN code. <br> Step 3. Actor enters their PIN code. <br> Step 4. Actor submits their PIN code to the System. <br>Step 5. System accepts the PIN code and presents the available services.
-**Result**|Actor has sucesfully identified him/herself, so they can proceed with the other ATM services.
-**Exceptions**|4a. System informs the Actor, that the entered PIN code is not correct. <br>   4a.1. ATM Ejects the card back. <br> 4a.2. Use-case ends here.
-
-
-<hr>
-<br>
-
-Name | Withdraw Money
-----|----
-**Actor**|Card holder
-**Description**|Card holder, wants to withdraw Cash from their Bank account, using their Bank card.
-**Precondition**|Actor has a pre-existing Bank account and a Bank card, associated with it.
-**Scenario**| Step 1. Actor <ins>Inserts their Card and enters their PIN code</ins>.<br> Step 2. Actor selects an option to Withdraw Money. <br> Step 3. System displays several pre-defined amounts and an option to manually Enter an amount of money to withdraw. <br> Step 4. Actor makes their choice of an amount to withdraw. <br> Step 5. Actor submits their choice. <br> Step 6. System asks Actor if they want a receipt. <br> Step 7. Actor chooses, weather to request a Receipt. <br> Step 8. System provides Actor with the selected Amount of Cash <br> Step 9. System returns the Bank Card to the Actor.
-**Result**|Actor has sucesfully withdrawn an amount of cash, from their Bank account.
-**Exceptions**|5a. System informs Actor, that the funds in their bank account are not sufficent for completing the operation. <br> 5a.1. System ejects the card.<br> 5a2. Use Case ends here.<br><br> 5b. System displays a message, that the custom entered amount is invalid. <br>  5b.1. Returns to Step 3.
-**Extensions**|4a. Actor chooses one of the pre-defined amounts. <br> 1. System acknowledges the selected amount for the withdraw. Proceeds to Step 5.<br><br> 4b. Actor chooses to manually enter an amount for the withdraw. <br> 1. System asks Actor to enter the desired amount. <br> 2. Actor enters the amount, that they want to withdraw. <br> 3. System acknowledges the entered amount for the withdraw. Proceeds to Step 5. <br><br> 7a. Actor selects that they Do not want to receive a Receipt. <br> 1. System registers their choice. Proceeds to Step 8<br><br> 7b. Actor selects that they want to receive a Receipt. <br>    1. System provides Actor with a Receipt for the operation. Proceeds to Step 8.<br>
-
-
-<hr>
-<br>
-
-Name | Check Balance
-----|----
-**Actor**|Cardholder
-**Description**|Cardholder would like to check the Balance of their Bank account.
-**Precondition**|Actor has a pre-excisting Bank account and a Bank card, associated with it.
-**Scenario**| Step 1. Actor <ins>Inserts their Card and enters their PIN code</ins>.<br> Step 2. Actor selects an option to Check their Balance.<br> Step 3. System displays Actor's balance and their most recent withdraws. <br> 
-**Result**|Actor sees their Balance and their most-recent withdraws.
-**Exceptions**|2a. System informs Actor that the Balance information is not available, due to the fact that the Bank associated with the ATM is not associated with their Bank Card. <br> 1. Use-case ends here.
-
-<br>
-<hr>
-<br>
-
-Name | Change PIN code
-----|----
-**Actor**|Cardholder
-**Description**|Cardholder wants to change their Bank card PIN code.
-**Precondition**|Actor has a pre-existing Bank account with a Bank card, associated with it.
-**Scenario**| Step 1. Actor <ins>Inserts their Card and enters their PIN code</ins>.<br> Step 2. Actor Selects an option to change their PIN code. <br> Step 3. System requests Actor to enter their new PIN code <br> Step 4. Actor enters their new PIN code. <br> Step 5. System requests Actor to confirm their new PIN code by entering it again. <br> Step 6. Actor confirms their new PIN code by entering it once again. <br> Step 7. System informs Actor, that their PIN code was sucesfully Changed.<br>
-**Result**|Actor has sucessfuly changed their Bank card PIN code.
-**Exceptions**|5a. System Dispalys a message, that the change was not sucessful, because the two New PIN codes did not match. <br>  1. Returns to Step 3.
-
-<br>
-
-### Music streaming service
-
-We are being asked to analyze requirements for a mobile app that offers a music streaming service. If you start the app, users are requested to sign in, before they can search music, play music and create, edit or view personal playlists. The music streaming service registers each play of a song, making it possible to show the number of plays a certain song has across all users (e.g. when the results of a search are shown). Furthermore, the app can show lists of personal top played songs and of country-specific top played songs.
-
-#### Use cases
+### Use cases
 * Sign in.
 * Register.
 * Search for a song, type of music.
@@ -100,6 +22,7 @@ We are being asked to analyze requirements for a mobile app that offers a music 
 <hr>
 
 
+### Use case descriptions
 
 Name | Sign in
 ----|----
@@ -260,56 +183,11 @@ Name | View number of plays of a song
 <hr>
 <hr>
 
-### Public transport card machine
-Through the public transport card machine a traveler can obtain a new anonymous travel card with a certain amount of money, (re)charge an existing anonymous travel card that the traveler inserted or (re)charge their personalized travel card. Additionally, travelers older than 60 owning a personalized card can use the machine to activate a so called 'choice day', which allows the traveler to travel for free during one day as long as they travel outside peak hours. Travelers can activate seven choice days per year.
-
-#### Use cases
-* Obtain a new anonymous card
-* Recharge a card
-* Activate a choice day
-
-<hr>
-
-### Use case Descriptions
-
-Name | Obtain a new anonymous card.
-----|----
-**Actor**|Treveller 
-**Description**|A traveller wants to obtain a new anonymous card for the public transport services.
-**Precondition**|Actor has a Contactless Bank card.
-**Scenario**| Step 1. System displays homepage. <br> Step 2. Actor selects an option to obtain a new anonymous card. <br> Step 3. System requests Actor to enter an amount of money, that is going to be added to the card's balance. <br> Step 4. Actor enters an amount for the inital charge. <br> Step 5. System asks Actor to confirm their choice. <br> Step 6. Actor confirms their choice of amount.<br> Step 7. System asks Actor to place their Bank card on the Payment terminal. <br> Step 8. Actor places their Bank Card to the Terminal <br> Step 9. System shows a Message, that the payment was sucessfull. <br> Step 10. System ejects the Anonymous card.
-**Result**|Actor has sucesfully purchased a new Anonymous Public Transport card. 
-**Exceptions**|4a. System displays a message that the entered amount is invalid. <br>   4a.1. Returns to Step 3. <br> 8a. System Displays a message, that the Payment was not sucesfull. <br>   8a.1. Use-case ends here.
-**Extensions**| 5a. Actor selects an option to correct the inital charged amount. <br>  1. Returns to step 3.
-
-<br>
-<hr>
+### Use-case Diagram
+![Use-case Diagram](https://github.com/FontysVenlo/aade-2020-assignments-aade-2020-g04/blob/master/assignment1/Music_app_use_case_diagram_Mino_Karadzhov.svg)
 <br>
 
-Name | Recharge a card
-----|----
-**Actor**|Treveller 
-**Description**|A Traveller tops their Card Balance with a value of their choice.
-**Precondition**|Actor has a pre-obtained Public Transport Card.
-**Scenario**| Step 1. System displays the Homepage. <br> Step 2. Actor Selects an option to charge their card. <br> Step 3. System asks Actor to insert their Public Transport Card. <br>Step 4. Actor inserts their Public Transport Card <br> Step 5. System asks Actor to enter an ammount, that they want to add to their Card Balance. <br> Step 6. Actor enters the desired ammount. <br> Step 7. System asks Actor to confirm the entered amount. <br> Step 8. Actor confirms the desired amount. <br> Step 9. System asks Actor to place their Bank card, next to the Payment terminal <br> Step 10. Actor places their card and makes the Payment <br> Step 11. System displays a Message, that the amount was added to the Balance and the payment was sucessfull.<br>
-**Result**|The Traveller has added funds to their Public transport card balance.
-**Exceptions**| 4a. System displays a message, that the card cannot be read. <br>   4a.1. Returns to Step 3. <br> 6a. System displays a message, that the entered amount is invalid. <br>  6a.1. Returns to Step 5. <br> 10a. System displays a message, that the payment was not sucessfull. <br>  10a.1. Use-case ends here.
-**Extensions**| 8a. Actor selects an option to make a Correction on the desired ammount. <br>   1. Returns to Step 5. <br>
-
-<br>
-<hr>
-<br>
-
-Name | Activate a choice day
-----|----
-**Actor**|Traveller
-**Description**|A traveller tries to select a choice day, when they will be able to travel for free, outside of peak hours.
-**Precondition**|Actor has a pre-obtained personal public transport card and he/she is older than 60.
-**Scenario**| Step 1. System displays homepage. <br> Step 2. Actor selects an option to Activate a choice day. <br> Step 3. System requests Actor to insert their Personal Public Transport card. <br> Step 4. Actor inserts their card. <br> Step 5. System asks Actor to select a choice day. <br> Step 6. Actor makes their Selection <br> Step 7. System asks Actor to confirm their selection <br> Step 8. Actor confirms their decision <br> Step 9. System displays a message, that the change was sucessfull.
-**Result**|The Traveller has sucessfully selected a choice day. 
-**Exceptions**|4a. System displays a message, that the card cannot be read by the device <br> 3a.1. Use-case ends here. <br> 4b. System displays a message that a change is not possible, because the traveller has already changed their choice day 7 times for the period of 1 year. <br> 4b.1. Use-case ends here.
-
-<br>
-<hr>
+### Domain Model
+![Domain Model](https://github.com/FontysVenlo/aade-2020-assignments-aade-2020-g04/blob/master/assignment1/Domain_Model_Music_App_Mino_Karadzhov.svg) 
 
 
