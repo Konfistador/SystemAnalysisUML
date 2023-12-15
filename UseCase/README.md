@@ -13,7 +13,7 @@ The following artefacts are results of analysis on several pre-defined business 
 Before a user can select a transaction, they have to insert their bank card and enter the correct pin-code. The ATM offers three transactions: withdraw money, check balance, change pin code. Checking the balance is only possible when the bank associated with the card is the same as the bank associated with the ATM. A bank card is always associated with one current account. When checking a balance, customers can also see their most recent withdrawals.
 
 [UseCaseDiagram](https://raw.githubusercontent.com/Konfistador/SystemAnalysisUML/b150b09b292dba59fd6e6280e564f6dfa4a57563/UseCase/Diagram/atmUseCaseD.svg)
-
+![atmUseCaseD](https://github.com/Konfistador/SystemAnalysisUML/assets/15638687/c50ff3b6-8034-4b40-bcfe-f43f0f7df25e)
 #### Use case Descriptions
 
 * Insert card and enter PIN code.
