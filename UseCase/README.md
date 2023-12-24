@@ -7,6 +7,34 @@ Use cases are essential in understanding user requirements and ensuring the deve
 ## Few words on the Artefacts in this directory
 The following artefacts are results of analysis on several pre-defined business cases. Their goal is to provide an understanding of what the system is expected to do, when a given scenario with expected results takes place.
 
+## From Use-case Description into UC Diagram
+As mentioned above, the use-case technique allows us to identify the functional requirements of a system. This happens by defining a scenario with different actors, which in some cases could be external systems. Although use case descriptions allow us to have an overview of the different steps required to achieve something using the system, such artifacts do not appear to be suitable for having an overview of who-does-what in a system.
+
+Use-case diagrams, on the other hand, visually represent the system's functionality and the interactions between various actors and the system itself. Here is the process of evolving detailed use case descriptions into comprehensive use case diagrams:
+
+### 1. **Identifying Actors and Use Cases:**
+   - **Actors Identification**: We start by identifying all the actors involved. Actors could be users, external systems, or other entities that interact with the system.
+   - **Use Cases Enumeration**: List out all the use cases from the descriptions, which represent specific functions or goals the actors want to achieve with the system.
+
+### 2. **Establishing Relationships:**
+   - **Actor to Use Case**: Determine which actors are involved in each use case and connect them appropriately.
+   - **Use Case to Use Case**: Identify any relationships between use cases, such as 'include', 'extend', or generalization.
+
+### 3. **Refining and Reviewing:**
+   - **Refinement**: Review each use case for completeness and accuracy. Ensure that it aligns with the corresponding description and covers all necessary interactions.
+   - **Validation**: Validate the diagrams with stakeholders or peers to ensure they accurately represent the system's intended functionality.
+
+### 4. **Diagramming:**
+   - **Drafting**: Using a UML tool, begin laying out the use cases and actors in a diagram format.
+   - **Connecting Elements**: Add relationships, including associations between actors and use cases and any dependencies between use cases themselves.
+
+### 5. **Finalizing:**
+   - **Annotations**: Where necessary, add notes or constraints to the diagram that provide additional context or specifications.
+   - **Styling**: Ensure the diagram is clear and well-organized, with consistent use of symbols and styles.
+
+By transitioning from use case descriptions to diagrams, we move from a textual representation of system interactions to a graphical one. This transition allows stakeholders to more easily understand and analyze the system's functional requirements at a glance. Use case diagrams serve as a powerful tool for summarizing complex systems, providing a bird's-eye view of who does what in a system, thereby facilitating better communication and understanding among the project team and stakeholders.
+
+
 ## Business cases
 
 ### ATM(Automated teller machine)
