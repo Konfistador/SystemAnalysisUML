@@ -14,14 +14,15 @@ This module focused on teaching systematic analysis and design approaches in sof
 - Communicating solutions and problems via diagrams.
 
 ## Repository Contents
-> TO BE ADDED
+- [Automated Teller Machine Use-cases, Domain Model, Use-case Diagram, Activity Diagram](https://github.com/Konfistador/SystemAnalysisUML/tree/main/ATM(Automatic%20Teller%20Machine))
+- [Cinema Centre Sequence Diagram on ticket purchasing process](https://github.com/Konfistador/SystemAnalysisUML/tree/main/Cinema)
+- [Elderly Home Domain Model and multiple State Machine Diagrams](https://github.com/Konfistador/SystemAnalysisUML/tree/main/ElderlyHome)
+- [Public Transport Card Device Activity Diagram](https://github.com/Konfistador/SystemAnalysisUML/blob/main/PublicTransportCardSystem/Public%20Card%20Machine.svg)
+- [Additional Domain Modelling](https://github.com/Konfistador/SystemAnalysisUML/tree/main/DomainModels)
 
 ### Tools used
 - Visual Paradigm
 - Git
-
-### Learning Outcomes
-> TO BE ADDED
 
 
 ### Usage of These Diagrams
@@ -29,6 +30,6 @@ Feel free to explore the diagrams in this repository for educational puroses or 
 
 ### Contact Information
 - Email: m.karadjov@icloud.com
-- LinkedIn: >link to my linkedIn
+- [LinkedIn](https://www.linkedin.com/in/mino-karadzhov-061059144/)
 
   
